@@ -18,6 +18,7 @@ img{
     top: 0;
     left: 0;
     z-index: -1;
+    filter: brightness(50%);
 }
 
 a{
@@ -30,12 +31,19 @@ ul{
 }
 
 nav {
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
     position: fixed;
     width: 100%;
+}
+
+.nav-scroll{
+    background-color: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
+    transition: all 0.5s ease;
 }
 
 .links{
