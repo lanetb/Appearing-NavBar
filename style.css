@@ -35,10 +35,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 50px;
     position: fixed;
     width: 100%;
     transition: all 0.5s ease;
+    font-size: 26px;
 }
 
 .nav-scroll{
