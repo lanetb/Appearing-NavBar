@@ -9,9 +9,14 @@ window.addEventListener('scroll', function() {
     }
 });
 
-const smallNav = document.querySelector('.fa-solid .fa-bars');
+const toggle = document.querySelector('.toggle-btn');
+const toggleIcon = document.querySelector('.toggle-btn i');
+const dropDown = document.querySelector('.drop-down');
 
-smallNav.onClick = function() {
-    navBar = document.querySelector('.navBar');
-    navBar.classList.toggle('active');
+toggle.onClick = function() {
+    dropDown.classList.toggle('.open');
+    const isOpen = dropDown.classList.contains('open');
+
+    toggleIcon.classList = isOpen ? 'fas fa-xmark' : 'fas fa-bars';
+
 }
