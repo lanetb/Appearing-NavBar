@@ -8,3 +8,10 @@ window.addEventListener('scroll', function() {
         nav.classList.remove('nav-scroll');
     }
 });
+
+const smallNav = document.querySelector('.fa-solid .fa-bars');
+
+smallNav.onClick = function() {
+    navBar = document.querySelector('.navBar');
+    navBar.classList.toggle('active');
+}
