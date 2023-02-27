@@ -68,6 +68,7 @@ header{
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    transition: all 1s ease;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -110,5 +111,12 @@ header{
     }
     .drop-down{
         display: block;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .drop-down{
+        left: 2rem;
+        width: unset;
     }
 }
